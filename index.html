@@ -2,49 +2,38 @@
 <html lang="ar" dir="rtl">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <meta name="description" content="صفحة تسجيل الدخول - GMEZZ" />
     <title>GMEZZ</title>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="./assets/index.css" />
+    <!-- الأيقونة الخاصة بالموقع -->
+    <link rel="icon" type="image/svg+xml" href="/Piscool/app-icon.svg" />
 
-    <!-- icon -->
-    <link rel="icon" type="image/svg+xml" href="./assets/app-icon-DNz2ltxJ.svg" />
-    <script type="module" crossorigin src="/Piscool/assets/index-BWpQkgqD.js"></script>
-    <link rel="stylesheet" crossorigin href="/Piscool/assets/index-usXdMYWO.css">
+    <!-- ممكن تضيف CSS عام لو حبيت -->
+    <link rel="stylesheet" href="/Piscool/index.css" />
+
+    <!-- دعم اللغة العربية واتجاه النص -->
+    <style>
+      body {
+        direction: rtl;
+        text-align: center;
+      }
+    </style>
+    <script type="module" crossorigin src="/Piscool/assets/index-DuXg4VXR.js"></script>
+    <link rel="stylesheet" crossorigin href="/Piscool/assets/index-BbBHa8Qn.css">
   </head>
 
-  <body class="bg-white text-black flex flex-col items-center justify-center min-h-screen font-sans">
-    <main class="flex flex-col items-center space-y-6">
-      <img src="./assets/app-icon-DNz2ltxJ.svg" alt="app logo" class="w-32 h-32" />
+  <body>
+    <!-- هنا React بيركب التطبيق -->
+    <div id="root"></div>
 
-      <h1 class="text-3xl font-bold">GMEZZ</h1>
-      <p class="text-md text-gray-700">تسجيل الدخول للمتجر</p>
+    <!-- سكربت Vite اللي بيبدأ React -->
 
-      <form class="flex flex-col items-center space-y-2 mt-4">
-        <input
-          type="email"
-          placeholder="example@email.com"
-          class="border border-gray-400 rounded px-2 py-1 text-center w-64 focus:outline-none focus:ring focus:border-blue-500"
-        />
-        <input
-          type="password"
-          placeholder="كلمة المرور"
-          class="border border-gray-400 rounded px-2 py-1 text-center w-64 focus:outline-none focus:ring focus:border-blue-500"
-        />
-        <button
-          type="submit"
-          class="bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded px-4 py-1 w-64"
-        >
-          تسجيل الدخول
-        </button>
-      </form>
-
-      <footer class="mt-8 text-sm text-gray-600">
-        جميع الحقوق محفوظة © GMEZZ 2025
-      </footer>
-    </main>
-
-    <!-- ✅ خلي Vite هو اللي يحقن المسار الصح -->
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-auth.js"></script>
   </body>
 </html>
