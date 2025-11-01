@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GMEZZ</title>
+    
+    <!-- PWA meta tags -->
+    <meta name="theme-color" content="#0f172a" />
+    <link rel="apple-touch-icon" href="/assets/icon-192-sshYN1fG.png">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/assets/app-icon-DNz2ltxJ.svg" type="image/svg+xml" />
+
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/assets/manifest-CgHlPiFq.json" />
+    
+    <!-- External libraries -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore-compat.js"></script>
+
+    <!-- Styles -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        input, select {
+            color-scheme: light;
+        }
+
+        /* --- Splash Screen BG --- */
+        .splash-bg {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #0f172a; /* slate-900 */
+            background-image:
+                linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+            background-size: 40px 40px;
+            animation: pan-grid 60s linear infinite;
+        }
+        @keyframes pan-grid {
+            from { background-position: 0 0; }
+            to { background-position: -800px -800px; }
+        }
+
+        /* --- Logo Animation --- */
+        @keyframes draw {
+          from { stroke-dashoffset: 60; }
+          to { stroke-dashoffset: 0; }
+        }
+        .animate-draw {
+          stroke-dasharray: 60;
+          animation: draw 2s ease-out forwards;
+        }
+
+        @keyframes fadeInG {
+          from { opacity: 0; transform: scale(0.8); }
+          to { opacity: 1; transform: scale(1); }
+        }
+        .animate-fade-in-G {
+          animation: fadeInG 1s ease-out 1s forwards;
+        }
+
+        /* --- Text Reveal Animation --- */
+        .letter-reveal-container {
+            display: inline-block;
+            overflow: hidden;
+            line-height: 1.1;
+        }
+        .animate-letter-reveal {
+            display: inline-block;
+            opacity: 0;
+            transform: translateY(100%);
+            animation: slide-up 1s forwards cubic-bezier(0.19, 1, 0.22, 1);
+        }
+        @keyframes slide-up {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+    
+    <!-- ES Module Import Map -->
+
+<link rel="stylesheet" href="/index.css">
+    <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@18.2.0",
+    "react-dom/client": "https://aistudiocdn.com/react-dom@18.2.0/client",
+    "react-dom/": "https://aistudiocdn.com/react-dom@18.2.0/",
+    "react/": "https://aistudiocdn.com/react@18.2.0/",
+    "jspdf": "https://aistudiocdn.com/jspdf@^3.0.3"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/assets/index-PkIad9NH.js"></script>
+</head>
+<body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+</body>
+</html>
