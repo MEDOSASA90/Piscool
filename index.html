@@ -4,44 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GMEZZ</title>
-    <link rel="icon" type="image/svg+xml" href="/Piscool/assets/app-icon-DNz2ltxJ.svg" />
-    <link rel="stylesheet" href="./assets/index.css" />
-    <script type="module" crossorigin src="/Piscool/assets/index-DqzaoA9r.js"></script>
-    <link rel="stylesheet" crossorigin href="/Piscool/assets/index-BISVeBxQ.css">
-  </head>
-  <body class="bg-gray-100 min-h-screen flex flex-col justify-center items-center">
-    <div class="text-center">
-      <img src="data:image/svg+xml,%3csvg%20viewBox='0%200%20100%20100'%20xmlns='http://www.w3.org/2000/svg'%3e%3cdefs%3e%3clinearGradient%20id='bg-grad'%20x1='0%25'%20y1='0%25'%20x2='100%25'%20y2='100%25'%3e%3cstop%20offset='0%25'%20style='stop-color:%231e293b'%20/%3e%3cstop%20offset='100%25'%20style='stop-color:%230f172a'%20/%3e%3c/linearGradient%3e%3c/defs%3e%3crect%20width='100'%20height='100'%20rx='22'%20fill='url(%23bg-grad)'/%3e%3cg%20transform='translate(12,%2012)%20scale(0.76)'%3e%3c!--%20Weighbridge%20Scale%20--%3e%3cpath%20d='M5%2088%20H%2095%20L%2090%2098%20H%2010%20Z'%20fill='%2338bdf8'%20opacity='0.8'%20/%3e%3c!--%20Truck%20--%3e%3cg%20stroke-linecap='round'%20stroke-linejoin='round'%3e%3c!--%20Main%20body%20--%3e%3cpath%20d='M8,%2080%20V55%20C8,52%2010,50%2013,50%20H45%20V30%20H70%20L85,45%20V80%20H8'%20fill='%230ea5e9'%20/%3e%3c!--%20Window%20--%3e%3cpath%20d='M50%2035%20H%2065%20L%2075%2045%20V%2055%20H%2050%20V%2035%20Z'%20fill='%230f172a'%20opacity='0.4'%20/%3e%3c!--%20Wheels%20--%3e%3ccircle%20cx='25'%20cy='80'%20r='9'%20fill='%230f172a'%20stroke='%2338bdf8'%20stroke-width='3'%20/%3e%3ccircle%20cx='70'%20cy='80'%20r='9'%20fill='%230f172a'%20stroke='%2338bdf8'%20stroke-width='3'%20/%3e%3c!--%20Headlight%20--%3e%3crect%20x='82'%20y='50'%20width='5'%20height='3'%20fill='%23facc15'%20rx='1'%20/%3e%3c/g%3e%3c/g%3e%3c/svg%3e" alt="app logo" class="mx-auto mb-4 w-16 h-16" />
-      <h1 class="text-3xl font-bold mb-4">GMEZZ</h1>
-      <h2 class="text-lg text-gray-600 mb-6">تسجيل الدخول للمتجر</h2>
 
-      <form class="space-y-3">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/index.css" />
+
+    <!-- icon -->
+    <link rel="icon" type="image/svg+xml" href="./assets/app-icon-DNz2ltxJ.svg" />
+    <script type="module" crossorigin src="/Piscool/assets/index-Cmp3f_ht.js"></script>
+    <link rel="stylesheet" crossorigin href="/Piscool/assets/index-usXdMYWO.css">
+  </head>
+
+  <body class="bg-white text-black flex flex-col items-center justify-center min-h-screen font-sans">
+    <main class="flex flex-col items-center space-y-6">
+      <img src="./assets/app-icon-DNz2ltxJ.svg" alt="app logo" class="w-32 h-32" />
+
+      <h1 class="text-3xl font-bold">GMEZZ</h1>
+      <p class="text-md text-gray-700">تسجيل الدخول للمتجر</p>
+
+      <form class="flex flex-col items-center space-y-2 mt-4">
         <input
           type="email"
           placeholder="example@email.com"
-          class="border rounded px-3 py-2 w-64 text-center"
-          required
+          class="border border-gray-400 rounded px-2 py-1 text-center w-64 focus:outline-none focus:ring focus:border-blue-500"
         />
-        <br />
         <input
           type="password"
           placeholder="كلمة المرور"
-          class="border rounded px-3 py-2 w-64 text-center"
-          required
+          class="border border-gray-400 rounded px-2 py-1 text-center w-64 focus:outline-none focus:ring focus:border-blue-500"
         />
-        <br />
         <button
           type="submit"
-          class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
+          class="bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded px-4 py-1 w-64"
         >
           تسجيل الدخول
         </button>
       </form>
 
-      <footer class="mt-8 text-gray-500 text-sm">
-        جميع الحقوق محفوظة © <strong>GMEZZ 2025</strong>
+      <footer class="mt-8 text-sm text-gray-600">
+        جميع الحقوق محفوظة © GMEZZ 2025
       </footer>
-    </div>
-
+    </main>
+
+    <!-- ✅ خلي Vite هو اللي يحقن المسار الصح -->
   </body>
 </html>
